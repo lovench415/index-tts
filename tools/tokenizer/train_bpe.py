@@ -18,9 +18,6 @@ from pathlib import Path
 
 import sentencepiece as spm
 
-from indextts.utils.front import TextNormalizer
-
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train a Japanese BPE tokenizer with SentencePiece.")
     parser.add_argument(
