@@ -15,7 +15,7 @@ import os
 import sys
 import tempfile
 from pathlib import Path
-
+from indextts.utils.front import TextNormalizer
 import sentencepiece as spm
 
 def parse_args() -> argparse.Namespace:
