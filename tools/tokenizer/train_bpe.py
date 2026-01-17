@@ -84,7 +84,7 @@ def iter_texts(manifests: list[Path]) -> tuple[int, int, Path]:
                             continue
                         payload = json.loads(line)
                         text = payload.get("text", "")
-                        text = normalizer.normalize(text, language="ja")
+                        text = text.strip()
                         if not text:
                             num_empty += 1
                             continue
